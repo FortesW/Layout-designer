@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+a {
+    text-decoration: none;
+}
+button {
+    border: none;
+    cursor: pointer;
+}
+.container {
+    max-width: 1107px;
+    margin: 0 auto;
+    padding: 0 20px 0 20px;
+}
+body {
+    background-color: #fcfdfd;
+}
+.gray {
+    background-color: #eeeff1;
+}
+.blue {
+    background-color: #34547a;
+}
+.text {
+    font-size: 16px;
+    font-weight: 400;
+    color: #727272;
+    max-width: 540px;
+    text-align: center;
+    margin: 0 auto;
+}
+.align-left {
+    text-align: left;
+}
+.main-btn {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 10%;
+    background-color: #34547a;
+    padding: 25px 41px;
+    color: #fff;
+    transition: 1.5s;
+    animation: btnAnimate 2s 1000 ease-in;
+}
+.main-btn:hover {
+    transform: rotate(360deg);
+}
+.section-spacing {
+    padding: 100px 0;
+}
+.section-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+h2 {
+    margin-bottom: 50px;
+    font-weight: 500;
+    font-size: 32px;
+}
+ul,
+ol {
+    list-style-type: none;
+}
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 40px;
+}
+.menu a {
+    color: black;
+    margin-right: 42px;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 10%;
+    transition: 0.333s;
+    display: block;
+}
+.menu a:hover {
+    color: #34547a;
+    transform: scale(1.1);
+    font-weight: 500;
+}
+.menu li:last-child a {
+    margin-right: 0;
+}
+.header {
+    display: flex;
+    padding-top: 194px;
+    padding-bottom: 154px;
+    justify-content: space-between;
+    align-items: center;
+}
+h1 {
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 60px;
+}
+.header .text {
+    margin-bottom: 60px;
+}
+.achievements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.achievements img {
+    height: 50px;
+    width: 50px;
+}
+.achievements li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.achievements p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 20px;
+}
+.achievements span {
+    display: block;
+    font-size: 21px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.about {
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 35px;
+    justify-content: space-between;
+}
+.about p {
+    max-width: 438px;
+    margin-bottom: 40px;
+    font-size: 21px;
+    font-weight: 300;
+}
+.about h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+.about h1 {
+    font-size: 50px;
+    margin: 0 0 30px 0;
+    color: #34547a;
+}
+.about img {
+    border-radius: 50%;
+    border: solid #34547a 10px;
+}
+.process p {
+    margin-bottom: 57px;
+}
+.offer p {
+    margin-bottom: 65px;
+}
+.offer-form {
+    display: grid;
+    grid-template-columns: 255px 255px;
+    gap: 20px 30px;
+    margin: 0 auto;
+    grid-template-rows: 50px 175px auto;
+}
+.offer-form textarea {
+    grid-column: span 2;
+    resize: none;
+}
+.offer-form button {
+    grid-column: span 2;
+    margin: 0 auto;
+    width: 190px;
+    padding: 20px 19px 20px 19px;
+    margin-top: 30px;
+}
+.offer-form textarea,
+.offer-form input {
+    border: none;
+    padding: 18px 20px;
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+}
+.offer-form textarea::placeholder,
+.offer-form input::placeholder {
+    color: #5f5d5d;
+}
+footer {
+    padding: 57px 0 43px 0;
+    color: white;
+}
+footer h3 {
+    font-size: 21px;
+    font-weight: 500;
+}
+footer p {
+    margin-top: 20px;
+    font-size: 13px;
+    font-weight: 400;
+}
+@keyframes btnAnimate {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(15deg);
+    }
+    50% {
+        transform: rotate(0);
+    }
+    75% {
+        transform: rotate(-15deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
